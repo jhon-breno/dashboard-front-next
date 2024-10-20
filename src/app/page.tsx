@@ -1,7 +1,34 @@
+import CardsBoard from "@/components/card";
+import ChartOverview from "@/components/chart";
+import Sales from "@/components/sales";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  DollarSign,
+  PackageCheck,
+  PackageX,
+  ShoppingBag,
+  Users,
+} from "lucide-react";
+
 export default function Home() {
   return (
     <div>
-      <h1>Home Page</h1>
+      <h1 className="sm:ml-16 p-4">
+        <section className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+          <CardsBoard />
+        </section>
+
+        <section className="flex flex-col mt-4 md:flex-row gap-4">
+          <ChartOverview />
+          <Sales />
+        </section>
+      </h1>
     </div>
   );
 }
