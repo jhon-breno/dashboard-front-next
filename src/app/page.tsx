@@ -1,20 +1,6 @@
 import CardsBoard from "@/components/card";
 import ChartOverview from "@/components/chart";
 import Sales from "@/components/sales";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import {
-  DollarSign,
-  PackageCheck,
-  PackageX,
-  ShoppingBag,
-  Users,
-} from "lucide-react";
 
 export default function Home() {
   return (
